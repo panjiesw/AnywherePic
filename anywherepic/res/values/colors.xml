@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General Purpose and Application Wide -->
+    <color name="background_light_grey">#EAEAEA</color>
+
+    <!-- MainActivity related color resource. -->
+    <color name="menu_drawer_background">#333</color>
+</resources>

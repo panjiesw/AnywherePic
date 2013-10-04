@@ -4,7 +4,7 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -15,6 +15,27 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/background_light_grey</item>
+        <item name="homeAsUpIndicator">@drawable/ic_drawer</item>
+    </style>
+
+    <!-- MainActivity style and widgets -->
+    <!-- NavigationDrawer ListView style -->
+    <style name="App.Widget.MenuDrawer.ListView" parent="AppTheme">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/menu_drawer_divider_height</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:background">@color/menu_drawer_background</item>
+    </style>
+    <!-- NavigationDrawer Text style -->
+    <style name="App.Widget.MenuDrawer.ListView.Text" parent="AppTheme">
+        <item name="android:textAppearance">?android:textAppearanceListItemSmall</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/menu_drawer_list_item_text_padding</item>
+        <item name="android:paddingRight">@dimen/menu_drawer_list_item_text_padding</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">?android:activatedBackgroundIndicator</item>
+        <item name="android:minHeight">?android:listPreferredItemHeightSmall</item>
     </style>
 
 </resources>

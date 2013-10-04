@@ -4,5 +4,9 @@
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw600dp devices (e.g. 7" tablets) here.
     -->
+    <!-- MainActivity Layout dimension -->
+    <dimen name="menu_drawer_width">300dp</dimen>
+    <dimen name="menu_drawer_divider_height">0dp</dimen>
+    <dimen name="menu_drawer_list_item_text_padding">16dp</dimen>
 
 </resources>
